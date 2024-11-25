@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Johnston Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <script defer src="js/client.js"></script>
+  </head>
+  <body>
+    <!-- header and nav -->
+    <header class="main-container">
+      <div class="header-item-1"><h1>Josh Johnston</h1></div>
+      <div class="header-item-2">
+        <button onclick="window.location.href='#hero';" class="header-nav-button button-style">About</button>
+        <button onclick="window.location.href='#projects';" class="header-nav-button button-style">Projects</button>
+        <button onclick="window.location.href='#skills';" class="header-nav-button button-style">Skills</button>
+        <button onclick="window.location.href='#contact';" class="header-nav-button button-style">Contact</button>
+      </div>
+      <div class="header-item-burger">
+        <button class="header-nav-button button-style nav-background" onclick="navBarClicked()"></button>
+      </div>
+      <div id="menu-collapse" class="header-mobile-nav">
+        <button onclick="window.location.href='#hero';" class="header-nav-button button-style">About</button>
+        <button onclick="window.location.href='#projects';" class="header-nav-button button-style">Projects</button>
+        <button onclick="window.location.href='#skills';" class="header-nav-button button-style">Skills</button>
+        <button onclick="window.location.href='#contact';" class="header-nav-button button-style">Contact</button>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <div id="hero" class="main-container hero">
+      <div class="hero-item-1">
+        <p>
+          <span style="font-size: 40px; font-weight: bold">Hello</span><br><br>my name is<br><br><span style="font-size: 50px; font-weight: bolder">Josh</span> <br><img
+            src="img/placeholder_avatar.webp"
+            alt="Placeholder avatar image">
+        </p>
+      </div>
+      <div class="hero-item-2">
+        <button onclick="window.location.href='#contact';" class="hero-button-contact button-style">Contact Me</button>
+      </div>
+      <div class="hero-item-3">
+        <a class="hero-button-contact button-style" href="files/placeholder_resume.docx">Download my resume here (.docx)<br></a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects" class="main-container projects">
+      <div class="project-section-main">
+        <h2>Projects</h2>
+      </div>
+      <div class="project-tile project-1">
+        <img src="img/tile_bg.webp" alt="">
+        <a class="project-button button-style" href="https://github.com/BlueM2ST/RPGMaker-Archive-Website" target="_blank">RPGMAKER Archive Project</a>
+      </div>
+
+      <div class="project-tile project-2">
+        <img src="img/github.webp" alt="">
+        <a class="project-button button-style" href="https://github.com/BlueM2ST" target="_blank">See more on my Github page</a>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="skills" class="main-container skills">
+      <div class="skills-1">
+        <h2>Knowledge</h2>
+        <p>• HTML and CSS</p>
+        <p>• Javascript</p>
+        <p>• Python</p>
+        <p>• Windows and Linux</p>
+      </div>
+      <div class="skills-2">
+        <h2>Skills</h2>
+        <p>• String work ethic</p>
+        <p>• Adaptive to new technologies</p>
+        <p>• Strong verbal communication</p>
+        <p>• Team player</p>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="contact-section-main">
+        <h2>Contact Me</h2>
+      </div>
+      <form action="#">
+        <input type="text" id="fname" name="name" placeholder="Name">
+
+        <input type="text" id="lname" name="email" placeholder="Email">
+
+        <textarea id="subject" name="message" placeholder="Your message..." style="height: 200px"></textarea>
+
+        <input class="button-style" type="submit" value="Submit">
+      </form>
+    </div>
+
+    <footer>
+      <p><a href="#hero"> About </a>&nbsp;&nbsp;<a href="#projects"> Projects </a>&nbsp;&nbsp;<a href="#skills"> Skills </a>&nbsp;&nbsp;<a href="#contact"> Contact </a></p>
+      <br>
+      <p><img src="img/linkedin.webp" alt="Linkedin logo">&nbsp;&nbsp;<a href="https://www.linkedin.com/in/josh-j-johnston/" target="_blank">Follow me on Linkedin</a></p>
+      <br>
+      <p>Made by Josh Johnston</p>
+    </footer>
+  </body>
+</html>
