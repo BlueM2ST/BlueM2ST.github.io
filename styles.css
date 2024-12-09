@@ -64,6 +64,7 @@ header {
   left: 50%;
   translate: -50%;
   background-color: #1d1f24;
+  z-index: 2;
 }
 
 /* title section */
