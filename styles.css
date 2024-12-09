@@ -8,6 +8,7 @@
 
 h1 {
   font-size: 50px;
+  color: beige;
 }
 
 /* ========================main container======================= */
@@ -99,35 +100,50 @@ header {
   min-height: 100vh;
   background-image: url("/img/star_bg.png");
   background-repeat: round;
-}
-
-.hero-item-1 {
-  grid-column: 5 / 9;
-  grid-row: 2/3;
+  max-width: 1300px;
+  margin: auto;
   text-align: center;
-  align-self: flex-end;
-  margin-bottom: 30px;
 }
 
-.hero-item-1 p {
-  font-size: 30px;
-  color: #a2bac4;
+.hero-header {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  animation-name: title-float-in;
+  animation-duration: 3s;
 }
 
-.hero-item-2 {
-  display: block;
-  grid-column: 5 / 9;
-  grid-row: 3/4;
+.hero-menu {
+    position: absolute;
+    width: 80vw;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation-name: button-float-in;
+    animation-duration: 3s;
 }
 
-.hero-item-3 {
-  grid-column: 6 / 8;
-  grid-row: 4/5;
+.hero-menu button {
+    width: 25%;
+    padding: 1% 1%;
+    margin: 0 2%;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgb(205, 237, 255);
+    color: black;
+    border: 2px solid #4004e7;
+    border-radius: 20px;
 }
 
-.hero-button-contact {
-  border-radius: 15px;
-  width: 100%;
+.menu button:hover {
+    background-color: #cf7070;
 }
 
 /* ============================projects================================ */
@@ -333,30 +349,18 @@ footer a:hover {
   }
 
   /* =============================hero================================= */
-  .hero-item-1 {
-    grid-column: 3 / 11;
-    grid-row: 2/3;
-    text-align: center;
-    align-self: flex-end;
-    margin-bottom: 30px;
-  }
-
-  .hero-item-1 p {
-    font-size: 30px;
-    color: #a2bac4;
-  }
-
-  .hero-item-2 {
-    display: block;
-    grid-column: 4 / 10;
-    grid-row: 3/4;
-  }
-
-  .hero-item-3 {
-    grid-column: 4 / 10;
-    grid-row: 4/5;
-  }
-
+ .hero-menu button {
+    width: 40%;
+    padding: 1% 1%;
+    margin: 0 2%;
+    text-decoration: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: rgb(205, 237, 255);
+    color: black;
+    border: 2px solid #4004e7;
+    border-radius: 20px;
+}
   /* ==========================projects=============================== */
   .project-section-main {
     margin-top: 5%;
@@ -430,4 +434,28 @@ footer a:hover {
   input[type="submit"] {
     margin-left: 43%;
   }
+}
+
+/* Keyframes */
+
+@keyframes title-float-in {
+    from {
+        top: 20%;
+        opacity: 0%;
+    }
+    to {
+        top: 30%;
+        opacity: 100%;
+    }
+}
+
+@keyframes button-float-in {
+    from {
+        top: 60%;
+        opacity: 0%;
+    }
+    to {
+        top: 50%;
+        opacity: 100%;
+    }
 }
