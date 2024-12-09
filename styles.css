@@ -131,9 +131,9 @@ header {
 }
 
 .hero-menu a {
-    width: 25%;
-    padding: 1% 1%;
-    margin: 0 2%;
+    display: inline-block;
+    width: 30%;
+    padding: 0.5% 0;
     text-decoration: none;
     font-size: 22px;
     cursor: pointer;
@@ -216,13 +216,6 @@ footer a:hover {
 
 /* ===========================================desktop only styles=================================================== */
 @media only screen and (min-width: 776px) {
-    /* ============================hero================================ */
-    .hero-item-2 {
-        display: block;
-        grid-column: 6 / 8;
-        grid-row: 3/4;
-    }
-
     /* ============================projects================================ */
 
     .project-button {
@@ -350,12 +343,27 @@ footer a:hover {
     }
 
     /* =============================hero================================= */
-    .hero-menu button {
+
+    .hero-menu {
+        position: absolute;
+        width: 80vw;
+        right: 0;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        animation-name: button-float-in;
+        animation-duration: 3s;
+    }
+
+    .hero-menu a {
+        display: inline-block;
         width: 40%;
-        padding: 1% 1%;
-        margin: 0 2%;
+        padding: 1% 0;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         cursor: pointer;
         background-color: rgb(205, 237, 255);
         color: black;
